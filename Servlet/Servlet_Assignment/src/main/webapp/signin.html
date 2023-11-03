@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sign In</title>
+<style >
+.Class1{ width: 50%; border: 2px solid;margin: auto;
+}
+</style>
+
+</head>
+<body>
+<div class="Class1">
+<h1>Welcome to Sign In Page</h1>
+<form action="signin" method="post">
+		<table>
+
+			<tr>
+				<td>Enter Your Username(Email Id)</td>
+				<td><input type="email" name="User_Name" /></td>
+			</tr>
+			<tr>
+				<td>Enter Email Password</td>
+				<td><input type="password" name="User_Password" /></td>
+			</tr>
+
+			<tr>
+				<td>Enter Your Type</td>
+				<td><select name="User_Type">
+						<option value="A">Admin
+						<option>
+						<option value="E">Employee
+						<option>
+				</select></td>
+			</tr>
+
+			<tr>
+				<td style="text-align: right;"><input type="submit" /></td>
+				<td><input type="reset" /></td>
+
+			</tr>
+		</table>
+
+	</form>
+</div>	
+</body>
+</html>

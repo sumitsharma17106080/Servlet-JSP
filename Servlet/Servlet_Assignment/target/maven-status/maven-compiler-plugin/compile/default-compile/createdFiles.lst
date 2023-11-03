@@ -1,0 +1,10 @@
+com\servlet\EmployeeServlet.class
+com\servlet\User.class
+com\servlet\ErrorServlet.class
+com\servlet\MyFilter.class
+com\servlet\DataBaseConnection.class
+com\servlet\Register.class
+com\servlet\ListTrainingServlet.class
+com\servlet\AdminServlet.class
+com\servlet\SignIn.class
+com\servlet\TrainingServlet.class

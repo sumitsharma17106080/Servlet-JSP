@@ -1,0 +1,49 @@
+Servlet Interface
+It have  5  method  3 lifecycle  + 2 Normal method 
+Servlet Interface method  =>void  init(ServletConfig servletConfig) , ServletConfig getServletConfig(), 
+void service(ServletRequest req,ServletResponse resp), String getServletInfo(), void destroy()
+
+GenericServlet Abstract Class
+Abstract Class GenericServlet  implements Servlet interface 
+Abstract Class GenericServlet have 1 abstract method and other 4 method of Servlet Interface implemented already
+void service(ServletRequest req,ServletResponse resp)
+
+Class HttpServlet  
+HttpServlet extends GenericServlet
+Method => doGet,doPost,doDelete,doPut ,doHead ,doOptions,doTrace,service=>(ServletRequest req, ServletResponse resp)
+getLastModified(ServletRequest req)
+service(HttpServletRequest req,HttpServletResponse resp);
+	
+*HttpServlet handle protocol specific request
+
+
+Web.xml =>Deployment Descriptor
+it make relation between ServletName, url and  User_Define_Servlet_Class
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+		<servlet-name>Servlet_Name(Anything)</servlet-name>
+		<servlet-class>package.user_define_servlet_class</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Servlet_Name(Should_Match_Above)</servlet-name>
+		<url-pattern>/url</url-pattern>
+  </servlet-mapping>
+</web-app>  
+
+pom.xml 
+It should have dependency
+<dependency>
+		<groupId>javax.servlet</groupId>
+		<artifactId>javax.servlet-api</artifactId>
+		<version>3.1.0</version>
+		<scope>provided</scope>
+</dependency>
+
+index.html/jsp
+it is starting page of Servlet Start
+we can add our own url for direction => <h2><a href="url">Url Name </a></h2>
+
+	
+
+ 
